@@ -1,104 +1,1229 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title> Dominios morfoclimáticos </title>
-  <style>
-    *{
+<title>Domínios Morfoclimáticos do Brasil</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
 scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#0f0f0f;
+background:linear-gradient(180deg,#eef9f1,#dff2e4,#ffffff);
+color:#1d1d1d;
+}
+
+header{
+background:linear-gradient(135deg,#146c43,#2e8b57);
+padding:25px;
 color:white;
-}
-
-.menu-btn{
-position:fixed;
-  top:20px;
-left:20px;
-font-size:35px;
-cursor:pointer;
-z-index:1001;
-}
-
-.sidebar{
-position:fixed;
-left:-260px;
+box-shadow:0 5px 20px rgba(0,0,0,.2);
+position:sticky;
 top:0;
-width:250px;
-height:100%;
-background:#181818;
-padding-top:80px;
-transition:.4s;
-z-index:1000;
-}
-    .sidebar.active{
-left:0;
+z-index:999;
 }
 
-.sidebar a{
-display:block;
-padding:18px;
-color:white;
-text-decoration:none;
-border-bottom:1px solid #333;
-}
-
-.sidebar a:hover{
-background:#2f7d32;
-}
-
-.hero{
-height:100vh;
-background:
-  linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url("https://i.ibb.co/fVThCFj8/file-000000007ed4720e9f9f3602dc34a3d6.png");
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+header h1{
 text-align:center;
-padding:20px;
+font-size:35px;
 }
 
-.hero h1{
-font-size:4rem;
-margin-bottom:20px;
+nav{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-top:15px;
+flex-wrap:wrap;
 }
-.hero p{
-font-size:1.3rem;
-max-width:700px;
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffe86b;
+}
+
+.inicio{
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+padding:80px 8%;
+flex-wrap:wrap;
+
+}
+
+.texto{
+max-width:620px;
+}
+
+.texto h2{
+
+font-size:45px;
+color:#146c43;
+margin-bottom:20px;
+
+}
+
+.texto p{
+
+font-size:20px;
+line-height:35px;
+text-align:justify;
+
+}
+
+.texto strong{
+
+color:#0d7d3d;
+
+}
+
+.foto img{
+
+width:340px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
 }
 
 .botao{
-margin-top:30px;
-padding:15px 30px;
-background:#2f7d32;
+
+display:inline-block;
+margin-top:35px;
+padding:15px 35px;
+background:#2e8b57;
 color:white;
 text-decoration:none;
-border-radius:10px;
+border-radius:40px;
+font-size:18px;
+font-weight:bold;
+transition:.4s;
+
+}
+
+.botao:hover{
+
+background:#146c43;
+transform:scale(1.05);
+
 }
 
 section{
-padding:100px 10%;
-}
-    section h2{
-font-size:2.5rem;
-margin-bottom:20px;
-color:#4caf50;
+
+padding:70px 10%;
+
 }
 
-section p{
-font-size:1.1rem;
-line-height:1.8;
+.titulo{
+
+text-align:center;
+font-size:38px;
+color:#146c43;
+margin-bottom:20px;
+
 }
-  </style>
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🌎 Domínios Morfoclimáticos do Brasil</h1>
+
+<nav>
+
+<a href="#climas">Climas</a>
+
+<a href="#amazonia">Amazônia</a>
+
+<a href="#cerrado">Cerrado</a>
+
+<a href="#caatinga">Caatinga</a>
+
+<a href="#mares">Mares de Morros</a>
+
+<a href="#araucarias">Araucárias</a>
+
+<a href="#pradarias">Pradarias</a>
+
+<a href="#quiz">Quiz</a>
+
+</nav>
+
+</header>
+
+<section class="inicio">
+
+<div class="texto">
+
+<h2>Olá! 👋</h2>
+
+<p>
+
+Você provavelmente chegou ao fim do meu <strong>livrinho sobre os Domínios Morfoclimáticos do Brasil</strong>. Espero que ele tenha ajudado você a conhecer um pouco mais sobre a diversidade natural do nosso país.
+
+</p>
+
+<br>
+
+<p>
+
+Agora, convido você a continuar essa experiência de uma forma mais interativa! Neste site você encontrará um resumo dos principais domínios morfoclimáticos, seus climas, vegetações, animais e características, além de um <strong>quiz</strong> para testar seus conhecimentos ao final.
+
+</p>
+
+<a href="#climas" class="botao">
+
+Começar 🚀
+
+</a>
+
+</div>
+
+<div class="foto">
+
+<img src="livrinho.jpg" alt="Livrinho sobre Domínios Morfoclimáticos">
+
+</div>
+
+</section>
+<!-- ================= CLIMAS ================= -->
+
+<section id="climas">
+
+<h2 class="titulo">
+🌦 Os Climas do Brasil
+</h2>
+
+<p style="text-align:center;font-size:19px;max-width:900px;margin:auto;line-height:35px;">
+
+A vegetação <strong>obedece ao clima</strong>, ou seja, cada tipo de vegetação se desenvolve de acordo com as condições climáticas da região. Temperatura, chuvas e umidade influenciam diretamente na formação das florestas, campos, cerrados e demais paisagens naturais.
+
+</p>
+
+<div class="cards-clima">
+
+<div class="card">
+
+<h3>🌳 Equatorial</h3>
+
+<p>
+
+• Quente e úmido.<br>
+• Chuvas abundantes durante todo o ano.<br>
+• Predomina na Amazônia.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌊 Tropical Úmido</h3>
+
+<p>
+
+• Quente e úmido.<br>
+• Próximo ao litoral.<br>
+• Chuvas frequentes durante boa parte do ano.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>☀ Tropical Semiúmido</h3>
+
+<p>
+
+• Região Central do Brasil.<br>
+• Verão quente e chuvoso.<br>
+• Inverno quente e seco.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌵 Semiárido</h3>
+
+<p>
+
+• Clima quente.<br>
+• Poucas chuvas.<br>
+• Longos períodos de seca.<br>
+• Característico do sertão nordestino.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>⛰ Tropical de Altitude</h3>
+
+<p>
+
+• Ocorre em áreas elevadas.<br>
+• Temperaturas mais amenas.<br>
+• Verões chuvosos e invernos frios.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>❄ Subtropical</h3>
+
+<p>
+
+• Sul do Trópico de Capricórnio.<br>
+• Quatro estações bem definidas.<br>
+• Invernos frios com ocorrência de geadas.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+.cards-clima{
+
+margin-top:50px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 12px 30px rgba(0,0,0,.12);
+transition:.4s;
+border-top:8px solid #2e8b57;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 18px 35px rgba(0,0,0,.18);
+
+}
+
+.card h3{
+
+color:#146c43;
+margin-bottom:18px;
+font-size:24px;
+
+}
+
+.card p{
+
+font-size:17px;
+line-height:32px;
+
+}
+
+</style>
+<!--================ AMAZÔNIA =================-->
+
+<section id="amazonia">
+
+<h2 class="titulo">
+🌿 Domínio Amazônico
+</h2>
+
+<div class="bioma">
+
+<div class="imagem">
+
+<img src="amazonia.jpg" alt="Floresta Amazônica">
+
+<img class="mapa" src="mapa-amazonia.png" alt="Mapa da Amazônia">
+
+</div>
+
+<div class="info">
+
+<h3>🌦 Clima</h3>
+
+<p>
+Equatorial: quente e úmido durante todo o ano, com chuvas abundantes.
+</p>
+
+<h3>🌳 Vegetação</h3>
+
+<p>
+
+• Floresta Latifoliada<br>
+• Perenifólia (sempre verde)<br>
+• Ombrófila (adaptada à umidade)<br>
+• Muito densa e fechada
+
+</p>
+
+<h3>🐆 Animais</h3>
+
+<p>
+
+🐆 Onça-pintada<br>
+🦜 Arara<br>
+🦥 Preguiça<br>
+🐍 Sucuri<br>
+🦅 Harpia<br>
+🐬 Boto-cor-de-rosa
+
+</p>
+
+<h3>🌎 Características</h3>
+
+<p>
+
+✔ Maior floresta tropical do planeta.<br>
+
+✔ Possui a maior bacia hidrográfica do mundo.<br>
+
+✔ Grande biodiversidade, com milhares de espécies de plantas e animais.<br>
+
+✔ Os solos são pouco férteis, porém a serrapilheira fornece nutrientes para a vegetação.<br>
+
+✔ Tem enorme importância para o clima do Brasil e do mundo.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+.bioma{
+
+display:flex;
+gap:45px;
+align-items:flex-start;
+margin-top:45px;
+flex-wrap:wrap;
+
+}
+
+.imagem{
+
+flex:1;
+min-width:320px;
+
+}
+
+.imagem img{
+
+width:100%;
+border-radius:18px;
+box-shadow:0 12px 30px rgba(0,0,0,.18);
+
+}
+
+.mapa{
+
+margin-top:20px;
+
+}
+
+.info{
+
+flex:1;
+min-width:320px;
+
+}
+
+.info h3{
+
+margin-top:20px;
+margin-bottom:10px;
+color:#146c43;
+font-size:25px;
+
+}
+
+.info p{
+
+line-height:32px;
+font-size:17px;
+text-align:justify;
+
+}
+
+</style>
+<!--================ CERRADO =================-->
+
+<section id="cerrado">
+
+<h2 class="titulo">
+🌾 Domínio do Cerrado
+</h2>
+
+<div class="bioma cerrado">
+
+<div class="info">
+
+<h3>🌦 Clima</h3>
+
+<p>
+Tropical Semiúmido: verão quente e chuvoso, inverno quente e seco.
+</p>
+
+<h3>🌳 Vegetação</h3>
+
+<p>
+
+• Árvores baixas e tortuosas<br>
+• Casca grossa<br>
+• Folhas resistentes<br>
+• Arbustos e gramíneas<br>
+• Raízes profundas
+
+</p>
+
+<h3>🦊 Animais</h3>
+
+<p>
+
+🦊 Lobo-guará<br>
+🐜 Tamanduá-bandeira<br>
+🐺 Cachorro-do-mato<br>
+🦔 Tatu-canastra<br>
+🐦 Seriema<br>
+🐦 Ema
+
+</p>
+
+<h3>🌎 Características</h3>
+
+<p>
+
+✔ Segundo maior domínio morfoclimático do Brasil.<br>
+
+✔ Conhecido como <strong>"Berço das Águas"</strong>, pois abriga nascentes de importantes rios brasileiros.<br>
+
+✔ Vegetação adaptada ao fogo natural e aos períodos de seca.<br>
+
+✔ Grande biodiversidade de fauna e flora.<br>
+
+✔ Muito utilizado para agricultura e pecuária.
+
+</p>
+
+</div>
+
+<div class="imagem">
+
+<img src="cerrado.jpg" alt="Domínio do Cerrado">
+
+<img class="mapa" src="mapa-cerrado.png" alt="Mapa do Cerrado">
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+#cerrado{
+
+background:#fff8ea;
+border-radius:25px;
+margin:70px 8%;
+padding:60px;
+
+}
+
+#cerrado .titulo{
+
+color:#9b5d00;
+
+}
+
+#cerrado .info h3{
+
+color:#9b5d00;
+
+}
+
+#cerrado .imagem img{
+
+border:5px solid #d9a441;
+
+}
+
+</style>
+<!--================ CAATINGA =================-->
+
+<section id="caatinga">
+
+<h2 class="titulo">
+🌵 Domínio das Caatingas
+</h2>
+
+<div class="bioma">
+
+<div class="imagem">
+
+<img src="caatinga.jpg" alt="Domínio das Caatingas">
+
+<img class="mapa" src="mapa-caatinga.png" alt="Mapa da Caatinga">
+
+</div>
+
+<div class="info">
+
+<h3>🌦 Clima</h3>
+
+<p>
+Semiárido: muito quente, com poucas chuvas e longos períodos de seca.
+</p>
+
+<h3>🌵 Vegetação</h3>
+
+<p>
+
+• Xerófila (adaptada à seca)<br>
+• Cactos<br>
+• Arbustos espinhosos<br>
+• Plantas que armazenam água<br>
+• Árvores que perdem as folhas na estiagem
+
+</p>
+
+<h3>🦎 Animais</h3>
+
+<p>
+
+🦎 Iguana<br>
+🐦 Asa-branca<br>
+🦌 Veado-catingueiro<br>
+🐭 Preá<br>
+🦔 Tatu-peba<br>
+🐍 Cascavel
+
+</p>
+
+<h3>🌎 Características</h3>
+
+<p>
+
+✔ Exclusiva do Brasil.<br>
+
+✔ Predomina no sertão nordestino.<br>
+
+✔ Os rios são, em sua maioria, temporários.<br>
+
+✔ As plantas possuem adaptações para economizar água.<br>
+
+✔ Apesar da seca, apresenta rica biodiversidade.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+#caatinga{
+
+background:#fff5df;
+padding:60px;
+border-radius:25px;
+margin:70px 8%;
+
+}
+
+#caatinga .titulo{
+
+color:#c47d00;
+
+}
+
+#caatinga .info h3{
+
+color:#c47d00;
+
+}
+
+#caatinga .imagem img{
+
+border:5px solid #e6b65b;
+
+}
+
+#caatinga .info{
+
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+</style>
+<!--================ MARES DE MORROS =================-->
+
+<section id="mares">
+
+<h2 class="titulo">
+🌊 Domínio dos Mares de Morros
+</h2>
+
+<div class="bioma mares">
+
+<div class="info">
+
+<h3>🌦 Clima</h3>
+
+<p>
+Tropical Úmido: quente e úmido, com chuvas frequentes, principalmente nas áreas próximas ao litoral.
+</p>
+
+<h3>🌳 Vegetação</h3>
+
+<p>
+
+• Mata Atlântica<br>
+• Floresta densa<br>
+• Árvores altas<br>
+• Grande biodiversidade<br>
+• Vegetação bastante preservada em algumas áreas
+
+</p>
+
+<h3>🦁 Animais</h3>
+
+<p>
+
+🦁 Mico-leão-dourado<br>
+🐆 Jaguatirica<br>
+🐒 Bugio<br>
+🦜 Tucano<br>
+🦋 Borboletas<br>
+🐍 Jararaca
+
+</p>
+
+<h3>⛰ Relevo</h3>
+
+<p>
+
+• Morros arredondados ("mares de morros")<br>
+• Serras<br>
+• Encostas íngremes
+
+</p>
+
+<h3>🌎 Características</h3>
+
+<p>
+
+✔ Predomina ao longo do litoral brasileiro.<br>
+
+✔ Abriga grande parte da Mata Atlântica.<br>
+
+✔ Possui uma das maiores biodiversidades do planeta.<br>
+
+✔ Sofre intensa ocupação humana.<br>
+
+✔ É uma região bastante suscetível à erosão e aos deslizamentos de terra.
+
+</p>
+
+</div>
+
+<div class="imagem">
+
+<img src="mares.jpg" alt="Domínio dos Mares de Morros">
+
+<img class="mapa" src="mapa-mares.png" alt="Mapa dos Mares de Morros">
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+#mares{
+
+background:linear-gradient(135deg,#eef9ff,#dff2ff);
+padding:60px;
+margin:70px 8%;
+border-radius:25px;
+
+}
+
+#mares .titulo{
+
+color:#0d6efd;
+
+}
+
+#mares .info h3{
+
+color:#0d6efd;
+
+}
+
+#mares .imagem img{
+
+border:5px solid #6db9ff;
+
+}
+
+#mares .info{
+
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+</style>
+<!--================ ARAUCÁRIAS =================-->
+
+<section id="araucarias">
+
+<h2 class="titulo">
+🌲 Domínio das Araucárias
+</h2>
+
+<div class="bioma">
+
+<div class="imagem">
+
+<img src="araucarias.jpg" alt="Floresta de Araucárias">
+
+<img class="mapa" src="mapa-araucarias.png" alt="Mapa das Araucárias">
+
+</div>
+
+<div class="info">
+
+<h3>🌦 Clima</h3>
+
+<p>
+Subtropical: localizado ao sul do Trópico de Capricórnio, com estações do ano bem definidas e invernos frios.
+</p>
+
+<h3>🌲 Vegetação</h3>
+
+<p>
+
+• Pinheiro-do-Paraná (Araucária)<br>
+• Floresta Ombrófila Mista<br>
+• Árvores de grande porte<br>
+• Presença de erva-mate
+
+</p>
+
+<h3>🦜 Animais</h3>
+
+<p>
+
+🦜 Gralha-azul<br>
+🐆 Jaguatirica<br>
+🐈 Puma<br>
+🦌 Veado<br>
+🦉 Coruja
+
+</p>
+
+<h3>🌎 Características</h3>
+
+<p>
+
+✔ Predomina na Região Sul.<br>
+✔ Invernos frios com geadas.<br>
+✔ A gralha-azul ajuda na dispersão das sementes da araucária.<br>
+✔ Bastante explorada pela madeira ao longo da história.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!--================ PRADARIAS =================-->
+
+<section id="pradarias">
+
+<h2 class="titulo">
+🌾 Domínio das Pradarias (Pampas)
+</h2>
+
+<div class="bioma">
+
+<div class="info">
+
+<h3>🌦 Clima</h3>
+
+<p>
+Subtropical, com verões quentes e invernos frios.
+</p>
+
+<h3>🌾 Vegetação</h3>
+
+<p>
+
+• Campos naturais<br>
+• Gramíneas<br>
+• Poucas árvores<br>
+• Plantas rasteiras
+
+</p>
+
+<h3>🐎 Animais</h3>
+
+<p>
+
+🐎 Cavalo<br>
+🦌 Veado-campeiro<br>
+🐦 Quero-quero<br>
+🦊 Graxaim-do-campo<br>
+🐦 Ema
+
+</p>
+
+<h3>🌎 Características</h3>
+
+<p>
+
+✔ Também conhecido como Pampas.<br>
+✔ Localiza-se principalmente no Rio Grande do Sul.<br>
+✔ Excelente para pecuária.<br>
+✔ Relevo predominantemente plano e suavemente ondulado.
+
+</p>
+
+</div>
+
+<div class="imagem">
+
+<img src="pradarias.jpg" alt="Pradarias">
+
+<img class="mapa" src="mapa-pradarias.png" alt="Mapa das Pradarias">
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+#araucarias{
+
+background:#eef9f0;
+padding:60px;
+margin:70px 8%;
+border-radius:25px;
+
+}
+
+#araucarias .titulo,
+#araucarias .info h3{
+
+color:#0d6b3d;
+
+}
+
+#araucarias .imagem img{
+
+border:5px solid #4caf50;
+
+}
+
+#pradarias{
+
+background:#fffceb;
+padding:60px;
+margin:70px 8%;
+border-radius:25px;
+
+}
+
+#pradarias .titulo,
+#pradarias .info h3{
+
+color:#b8860b;
+
+}
+
+#pradarias .imagem img{
+
+border:5px solid #d4b04c;
+
+}
+
+</style>
+<!--================ QUIZ =================-->
+
+<section id="quiz">
+
+<h2 class="titulo">🧠 Quiz dos Domínios Morfoclimáticos</h2>
+
+<p style="text-align:center;font-size:18px;margin-bottom:40px;">
+Teste seus conhecimentos! Escolha uma alternativa em cada pergunta e clique em <b>Finalizar Quiz</b>.
+</p>
+
+<div class="quiz">
+
+<div class="pergunta">
+<p><b>1.</b> Qual domínio possui a maior floresta tropical do planeta?</p>
+<label><input type="radio" name="q1" value="0"> Cerrado</label><br>
+<label><input type="radio" name="q1" value="1"> Amazônico</label><br>
+<label><input type="radio" name="q1" value="0"> Caatinga</label><br>
+<label><input type="radio" name="q1" value="0"> Pradarias</label>
+</div>
+
+<div class="pergunta">
+<p><b>2.</b> O clima Equatorial é...</p>
+<label><input type="radio" name="q2" value="1"> Quente e úmido.</label><br>
+<label><input type="radio" name="q2" value="0"> Frio e seco.</label><br>
+<label><input type="radio" name="q2" value="0"> Semiárido.</label><br>
+<label><input type="radio" name="q2" value="0"> Subtropical.</label>
+</div>
+
+<div class="pergunta">
+<p><b>3.</b> Qual domínio é conhecido como Berço das Águas?</p>
+<label><input type="radio" name="q3" value="0"> Caatinga</label><br>
+<label><input type="radio" name="q3" value="1"> Cerrado</label><br>
+<label><input type="radio" name="q3" value="0"> Pradarias</label><br>
+<label><input type="radio" name="q3" value="0"> Araucárias</label>
+</div>
+
+<div class="pergunta">
+<p><b>4.</b> A vegetação obedece ao...</p>
+<label><input type="radio" name="q4" value="1"> Clima.</label><br>
+<label><input type="radio" name="q4" value="0"> Relevo.</label><br>
+<label><input type="radio" name="q4" value="0"> Solo apenas.</label><br>
+<label><input type="radio" name="q4" value="0"> Homem.</label>
+</div>
+
+<div class="pergunta">
+<p><b>5.</b> Qual domínio é exclusivo do Brasil?</p>
+<label><input type="radio" name="q5" value="1"> Caatinga</label><br>
+<label><input type="radio" name="q5" value="0"> Amazônia</label><br>
+<label><input type="radio" name="q5" value="0"> Pampas</label><br>
+<label><input type="radio" name="q5" value="0"> Araucárias</label>
+</div>
+
+<div class="pergunta">
+<p><b>6.</b> Qual domínio possui árvores tortuosas e raízes profundas?</p>
+<label><input type="radio" name="q6" value="0"> Amazônia</label><br>
+<label><input type="radio" name="q6" value="1"> Cerrado</label><br>
+<label><input type="radio" name="q6" value="0"> Caatinga</label><br>
+<label><input type="radio" name="q6" value="0"> Mares de Morros</label>
+</div>
+
+<div class="pergunta">
+<p><b>7.</b> O domínio das Araucárias predomina em qual região?</p>
+<label><input type="radio" name="q7" value="0"> Norte</label><br>
+<label><input type="radio" name="q7" value="1"> Sul</label><br>
+<label><input type="radio" name="q7" value="0"> Nordeste</label><br>
+<label><input type="radio" name="q7" value="0"> Centro-Oeste</label>
+</div>
+
+<div class="pergunta">
+<p><b>8.</b> Os Pampas também são chamados de...</p>
+<label><input type="radio" name="q8" value="0"> Cerrado</label><br>
+<label><input type="radio" name="q8" value="0"> Mata Atlântica</label><br>
+<label><input type="radio" name="q8" value="1"> Pradarias</label><br>
+<label><input type="radio" name="q8" value="0"> Caatinga</label>
+</div>
+
+<div class="pergunta">
+<p><b>9.</b> Qual domínio apresenta relevo com morros arredondados?</p>
+<label><input type="radio" name="q9" value="1"> Mares de Morros</label><br>
+<label><input type="radio" name="q9" value="0"> Cerrado</label><br>
+<label><input type="radio" name="q9" value="0"> Araucárias</label><br>
+<label><input type="radio" name="q9" value="0"> Caatinga</label>
+</div>
+
+<div class="pergunta">
+<p><b>10.</b> O clima Semiárido possui...</p>
+<label><input type="radio" name="q10" value="1"> Pouca chuva.</label><br>
+<label><input type="radio" name="q10" value="0"> Chuvas o ano inteiro.</label><br>
+<label><input type="radio" name="q10" value="0"> Neve.</label><br>
+<label><input type="radio" name="q10" value="0"> Frio intenso.</label>
+</div>
+
+<button onclick="corrigir()">Finalizar Quiz</button>
+
+<h2 id="resultado"></h2>
+
+</div>
+
+</section>
+
+<style>
+
+.quiz{
+
+max-width:900px;
+margin:auto;
+
+}
+
+.pergunta{
+
+background:white;
+padding:25px;
+margin-bottom:25px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+.pergunta p{
+
+font-size:19px;
+margin-bottom:15px;
+
+}
+
+label{
+
+font-size:17px;
+line-height:35px;
+cursor:pointer;
+
+}
+
+button{
+
+display:block;
+margin:40px auto;
+padding:16px 45px;
+border:none;
+border-radius:40px;
+background:#2e8b57;
+color:white;
+font-size:19px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+background:#146c43;
+
+}
+
+#resultado{
+
+text-align:center;
+margin-top:35px;
+color:#146c43;
+
+}
+
+</style>
+
+<script>
+
+function corrigir(){
+
+let total=0;
+
+for(let i=1;i<=10;i++){
+
+let resposta=document.querySelector('input[name="q'+i+'"]:checked');
+
+if(resposta){
+
+total+=Number(resposta.value);
+
+}
+
+}
+
+let texto="";
+
+if(total==10){
+
+texto="🏆 Parabéns! Você acertou todas! Nota: 10/10";
+
+}else if(total>=8){
+
+texto="🎉 Excelente! Você fez "+total+"/10.";
+
+}else if(total>=6){
+
+texto="👏 Muito bem! Você fez "+total+"/10.";
+
+}else{
+
+texto="📚 Você fez "+total+"/10. Continue estudando, você consegue!";
+
+}
+
+document.getElementById("resultado").innerHTML=texto;
+
+window.scrollTo({
+
+top:document.getElementById("resultado").offsetTop-100,
+
+behavior:"smooth"
+
+});
+
+}
+
+</script>
+
+</body>
+
+</html>
